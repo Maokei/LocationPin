@@ -17,17 +17,13 @@ import se.maokei.locpin.model.User;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@ActiveProfiles("test")
 @SpringBootTest
 @AutoConfigureMockMvc
-@EnableWebMvc
 public class AuthControllerTest {
     @Autowired
     WebApplicationContext context;
-
     @Autowired
     private ObjectMapper om;
-
     @Autowired
     private MockMvc mockMvc;
 
