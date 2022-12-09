@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>locpin app</name>
-    <description>Spring boot and and react project</description>
+    <description>Spring boot and react project</description>
 
     <properties>
         <frontend-maven-plugin.version> 1.10.0</frontend-maven-plugin.version>
