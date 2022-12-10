@@ -1,12 +1,10 @@
 package se.maokei.locpin;
 
-import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.MapPropertySource;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.testcontainers.containers.JdbcDatabaseContainer;
 import org.testcontainers.containers.PostgisContainerProvider;
 import org.testcontainers.lifecycle.Startables;
@@ -14,10 +12,9 @@ import org.testcontainers.lifecycle.Startables;
 import java.util.Map;
 import java.util.stream.Stream;
 
-@RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ContextConfiguration(initializers = AbstractIntegrationTest.Initializer.class)
-abstract class AbstractIntegrationTest {
+public abstract class AbstractIntegrationTest {
 
     static class Initializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {
         //static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>();

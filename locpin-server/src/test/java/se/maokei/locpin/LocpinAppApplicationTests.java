@@ -1,10 +1,8 @@
 package se.maokei.locpin;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class LocpinAppApplicationTests {
+class LocpinAppApplicationTests extends AbstractIntegrationTest {
 
     @Test
     void contextLoads() {
