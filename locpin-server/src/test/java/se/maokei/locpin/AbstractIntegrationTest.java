@@ -3,6 +3,7 @@ package se.maokei.locpin;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.MapPropertySource;
 import org.springframework.test.context.ContextConfiguration;
 import org.testcontainers.containers.JdbcDatabaseContainer;
@@ -33,7 +34,7 @@ public abstract class AbstractIntegrationTest {
 
         @Override
         public void initialize(ConfigurableApplicationContext context) {
-            var env = context.getEnvironment();
+            ConfigurableEnvironment env = context.getEnvironment();
             env.getPropertySources().addFirst(new MapPropertySource(
                     "testcontainers",
                     (Map) getProperties()

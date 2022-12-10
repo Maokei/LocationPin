@@ -12,10 +12,10 @@
     <description>Spring boot and React project</description>
 
     <properties>
-        <frontend-maven-plugin.version> 1.10.0</frontend-maven-plugin.version>
-        <node.version>v14.2.0</node.version>
+        <frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
+        <node.version>v19.2.0</node.version>
         <yarn.version>v1.22.4</yarn.version>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
     </properties>
 
     <modules>
