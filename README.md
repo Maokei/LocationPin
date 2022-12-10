@@ -10,7 +10,7 @@ Security          | Token Based (Spring Security and [JWT](https://github.com/au
 REST Documentation| [Swagger UI / Springfox](https://github.com/springfox/springfox)
 REST Spec         | [Open API Standard](https://www.openapis.org/)
 Websocket         | spring-websocket
-In Memory DB      | H2 
+Database          | Postgis
 Persistence       | JPA (Using Spring Data)
-Client Build Tools| Webpack, yarn
+Client Build Tools| Vite, Yarn
 Server Build Tools| Maven
