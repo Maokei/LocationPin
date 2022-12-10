@@ -4,6 +4,7 @@
 ### Technology Stack
 Component         | Technology
 ---               | ---
+Java              | Version 17
 Frontend          | [React](https://reactjs.org/)
 Backend (REST)    | [SpringBoot](https://projects.spring.io/spring-boot) (Java)
 Security          | Token Based (Spring Security and [JWT](https://github.com/auth0/java-jwt) )
