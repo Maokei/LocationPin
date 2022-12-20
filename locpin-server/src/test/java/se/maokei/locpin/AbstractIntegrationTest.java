@@ -20,7 +20,7 @@ public abstract class AbstractIntegrationTest {
     static class Initializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {
         //static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>();
         static JdbcDatabaseContainer<?> postgres = new PostgisContainerProvider().newInstance();
-        //provider.
+
 
         public static Map<String, String> getProperties() {
             Startables.deepStart(Stream.of(postgres)).join();

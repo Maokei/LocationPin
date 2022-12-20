@@ -46,7 +46,7 @@ public class DataInitializer implements CommandLineRunner {
      * */
     private void initiateRoles() {
         System.out.println("Inserting roles");
-        List<Role> roles = new ArrayList();
+        List<Role> roles = new ArrayList<>();
         Optional<Role> rop = roleRepo.findByName(RoleName.ROLE_ADMIN);
         if(rop.isEmpty()) {
             roles.add(new Role(RoleName.ROLE_ADMIN));
